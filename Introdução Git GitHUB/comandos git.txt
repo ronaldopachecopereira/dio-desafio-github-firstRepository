@@ -1,0 +1,901 @@
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git clone https://github.com/ronaldopachecopereira/CienciaDados.git
+Cloning into 'CienciaDados'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 1), reused 8 (delta 1), pack-reused 0
+Receiving objects: 100% (10/10), done.
+Resolving deltas: 100% (1/1), done.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ ls
+CienciaDados/  teste.md
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        CienciaDados/
+        teste.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git init
+Reinitialized existing Git repository in C:/Ciencia-Dados/.git/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ ls -a
+./  ../  .git/  CienciaDados/  teste.md
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ cd .git/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados/.git (GIT_DIR!)
+$ ls
+HEAD  config  description  hooks/  info/  objects/  refs/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados/.git (GIT_DIR!)
+$ cd ..
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git config --global user.email "ronaldo.pacheco.pereira@gmail.com"
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git config --global user.name "ronaldopachecopereira"
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git config --global user.name ronaldopachecopereira
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add *
+warning: adding embedded git repository: CienciaDados
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> CienciaDados
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached CienciaDados
+hint:
+hint: See "git help submodule" for more information.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -m "Commit inicial"
+[master (root-commit) 412f0cb] Commit inicial
+ 2 files changed, 4 insertions(+)
+ create mode 160000 CienciaDados
+ create mode 100644 teste.md
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ ls
+CienciaDados/  teste.md
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -a
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add CienciaDados/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -a
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -m "movendo pasta"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add *
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ ls
+CienciaDados/  teste.md
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -m
+error: switch `m' requires a value
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -m "adciona index"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.email=ronaldo.pacheco.pereira@gmail.com
+user.name=ronaldopachecopereira
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote add origin https://github.com/ronaldopachecopereira/CienciaDados
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote -v
+origin  https://github.com/ronaldopachecopereira/CienciaDados (fetch)
+origin  https://github.com/ronaldopachecopereira/CienciaDados (push)
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git push origin master
+To https://github.com/ronaldopachecopereira/CienciaDados
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ronaldopachecopereira/CienciaDados'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote add origin https://github.com/ronaldopachecopereira/CienciaDados.git
+error: remote origin already exists.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git push origin master
+To https://github.com/ronaldopachecopereira/CienciaDados
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/ronaldopachecopereira/CienciaDados'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git pull origin master
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 1), reused 8 (delta 1), pack-reused 0
+Unpacking objects: 100% (10/10), 1.44 KiB | 30.00 KiB/s, done.
+From https://github.com/ronaldopachecopereira/CienciaDados
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ mkdir Math
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ ls
+CienciaDados/  Math/  teste.md
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add *
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add CienciaDados/README.md
+fatal: Pathspec 'CienciaDados/README.md' is in submodule 'CienciaDados'
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add CienciaDados/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -a
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ delete CienciaDados/
+bash: delete: command not found
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git delete CienciaDados/
+git: 'delete' is not a git command. See 'git --help'.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote CienciaDados/
+error: Unknown subcommand: CienciaDados/
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote remove CienciaDados/
+error: No such remote: 'CienciaDados/'
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git init
+Reinitialized existing Git repository in C:/Ciencia-Dados/.git/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote push origin master
+error: Unknown subcommand: push
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote push origin
+error: Unknown subcommand: push
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote add -m
+error: switch `m' requires a value
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git clone https://github.com/ronaldopachecopereira/CienciaDados.git
+fatal: destination path 'CienciaDados' already exists and is not an empty directory.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add .
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -m "inclusão de mais arquivos"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add CienciaDados/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add .
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -m "inclusão de arquivos"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git restore CienciaDados/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git reset head
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/ronaldopachecopereira/CienciaDados'
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ cd ..
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c
+$ cd Ciencia-Dados/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+
+
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+
+
+
+
+
+
+
+
+
+
+
+
+[A
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ naldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ naldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    CienciaDados
+        deleted:    teste.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add .
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    CienciaDados
+        deleted:    teste.md
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git push origin mais
+error: src refspec mais does not match any
+error: failed to push some refs to 'https://github.com/ronaldopachecopereira/CienciaDados'
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/ronaldopachecopereira/CienciaDados'
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git clone https://github.com/ronaldopachecopereira/CienciaDados.git
+Cloning into 'CienciaDados'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 1), reused 8 (delta 1), pack-reused 0
+Receiving objects: 100% (10/10), done.
+Resolving deltas: 100% (1/1), done.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    CienciaDados
+        deleted:    teste.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        CienciaDados/
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add .
+warning: adding embedded git repository: CienciaDados
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> CienciaDados
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached CienciaDados
+hint:
+hint: See "git help submodule" for more information.
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    teste.md
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git commit -m "incluir arquivos"
+[master 331d817] incluir arquivos
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 teste.md
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/ronaldopachecopereira/CienciaDados'
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote push origin
+error: Unknown subcommand: push
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote push origin master
+error: Unknown subcommand: push
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote -v
+origin  https://github.com/ronaldopachecopereira/CienciaDados (fetch)
+origin  https://github.com/ronaldopachecopereira/CienciaDados (push)
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote add CienciaDados/
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote add -t
+error: switch `t' requires a value
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote add -m
+error: switch `m' requires a value
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote origin -m
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote origin -add CienciaDados/ -m
+error: Unknown subcommand: origin
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ ls
+CienciaDados/
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git list
+git: 'list' is not a git command. See 'git --help'.
+
+The most similar commands are
+        bisect
+        rev-list
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote push origin master
+error: Unknown subcommand: push
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git add .
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   CienciaDados (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ronaldo.pereira@CPX-GZ8W7XJM1M5 MINGW64 /c/Ciencia-Dados (master)
+$ git remote add -t
+
+
+
+--------------------------
+
+
+i2208-015408
